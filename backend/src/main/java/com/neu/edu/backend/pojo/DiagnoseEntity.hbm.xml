@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.neu.edu.backend.pojo.DiagnoseEntity" table="diagnose" schema="cloudhospital">
+        <id name="id">
+            <column name="id" sql-type="int(255)"/>
+        </id>
+        <property name="medicalHistoryId">
+            <column name="medical_history_id" sql-type="int(255)" not-null="true"/>
+        </property>
+        <property name="registrationId">
+            <column name="registration_id" sql-type="int(255)" not-null="true"/>
+        </property>
+        <property name="diseaseId">
+            <column name="disease_id" sql-type="int(255)" not-null="true"/>
+        </property>
+        <property name="diagnoseType">
+            <column name="diagnose_type" sql-type="int(255)" not-null="true"/>
+        </property>
+        <property name="date">
+            <column name="date" sql-type="date" not-null="true"/>
+        </property>
+        <property name="diagnoseTime">
+            <column name="diagnose_time" sql-type="int(255)" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

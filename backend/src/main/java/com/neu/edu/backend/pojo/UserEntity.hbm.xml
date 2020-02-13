@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.neu.edu.backend.pojo.UserEntity" table="user" schema="cloudhospital">
+        <id name="id">
+            <column name="id" sql-type="int(11) unsigned"/>
+        </id>
+        <property name="username">
+            <column name="username" sql-type="varchar(64)" length="64"/>
+        </property>
+        <property name="password">
+            <column name="password" sql-type="varchar(64)" length="64"/>
+        </property>
+        <property name="realName">
+            <column name="real_name" sql-type="varchar(64)" length="64"/>
+        </property>
+        <property name="categoryId">
+            <column name="category_id" sql-type="varchar(11)" length="11"/>
+        </property>
+        <property name="titleId">
+            <column name="title_id" sql-type="varchar(11)" length="11"/>
+        </property>
+        <property name="isSchedule">
+            <column name="is_schedule" sql-type="char(1)" length="1"/>
+        </property>
+        <property name="departmentId">
+            <column name="departmentId" sql-type="varchar(11)" length="11"/>
+        </property>
+        <property name="registrationLevel">
+            <column name="registrationLevel" sql-type="char(1)" length="1"/>
+        </property>
+        <property name="isDelete">
+            <column name="is_delete" sql-type="char(1)" length="1"/>
+        </property>
+    </class>
+</hibernate-mapping>

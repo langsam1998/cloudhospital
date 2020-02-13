@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.neu.edu.backend.pojo.ScheduleEntity" table="schedule" schema="cloudhospital">
+        <id name="id">
+            <column name="id" sql-type="varchar(11)" length="11"/>
+        </id>
+        <property name="departmentId">
+            <column name="department_id" sql-type="varchar(11)" length="11"/>
+        </property>
+        <property name="doctorId">
+            <column name="doctor_id" sql-type="varchar(11)" length="11"/>
+        </property>
+        <property name="morningAfternoon">
+            <column name="morning_afternoon" sql-type="varchar(11)" length="11"/>
+        </property>
+        <property name="scheduleRuleId">
+            <column name="schedule_rule_id" sql-type="varchar(11)" length="11"/>
+        </property>
+        <property name="isDelete">
+            <column name="is_delete" sql-type="char(1)" length="1"/>
+        </property>
+        <property name="date">
+            <column name="date" sql-type="date" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

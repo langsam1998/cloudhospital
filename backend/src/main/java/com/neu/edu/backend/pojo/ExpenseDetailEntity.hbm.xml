@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.neu.edu.backend.pojo.ExpenseDetailEntity" table="expense_detail" schema="cloudhospital">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="registrationId">
+            <column name="registration_id" sql-type="int(11)"/>
+        </property>
+        <property name="invoiceId">
+            <column name="invoice_id" sql-type="int(11)"/>
+        </property>
+        <property name="itemType">
+            <column name="item_type" sql-type="int(11)"/>
+        </property>
+        <property name="itemName">
+            <column name="item_name" sql-type="varchar(64)" length="64"/>
+        </property>
+        <property name="itemPrice">
+            <column name="item_price" sql-type="int(11)"/>
+        </property>
+        <property name="amount">
+            <column name="amount" sql-type="int(11)"/>
+        </property>
+        <property name="departmentId">
+            <column name="department_id" sql-type="int(11)"/>
+        </property>
+        <property name="payRefundTime">
+            <column name="pay_refund_time" sql-type="datetime"/>
+        </property>
+        <property name="payUserId">
+            <column name="pay_user_id" sql-type="int(11)"/>
+        </property>
+        <property name="payType">
+            <column name="pay_type" sql-type="int(11)"/>
+        </property>
+    </class>
+</hibernate-mapping>

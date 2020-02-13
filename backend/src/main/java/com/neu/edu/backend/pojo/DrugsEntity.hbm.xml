@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.neu.edu.backend.pojo.DrugsEntity" table="drugs" schema="cloudhospital">
+        <id name="id">
+            <column name="id" sql-type="varchar(11)" length="11"/>
+        </id>
+        <property name="drugsCode">
+            <column name="drugs_code" sql-type="varchar(64)" length="64"/>
+        </property>
+        <property name="drugsName">
+            <column name="drugs_name" sql-type="varchar(64)" length="64"/>
+        </property>
+        <property name="drugsFormat">
+            <column name="drugs_format" sql-type="varchar(64)" length="64"/>
+        </property>
+        <property name="drugsUnit">
+            <column name="drugs_unit" sql-type="char(1)" length="1"/>
+        </property>
+        <property name="manufacturer">
+            <column name="manufacturer" sql-type="varchar(64)" length="64" not-null="true"/>
+        </property>
+        <property name="drugsPrice">
+            <column name="drugs_price" sql-type="float(11)" precision="11"/>
+        </property>
+        <property name="mnemonicCode">
+            <column name="mnemonic_code" sql-type="varchar(64)" length="64"/>
+        </property>
+        <property name="creationDate">
+            <column name="creation_date" sql-type="varchar(11)" length="11"/>
+        </property>
+    </class>
+</hibernate-mapping>

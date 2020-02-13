@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.neu.edu.backend.pojo.DiseCategoryEntity" table="dise_category" schema="cloudhospital">
+        <id name="id">
+            <column name="id" sql-type="varchar(11)" length="11"/>
+        </id>
+        <property name="diseCategoryCode">
+            <column name="dise_category_code" sql-type="varchar(64)" length="64" not-null="true"/>
+        </property>
+        <property name="diseCategoryName">
+            <column name="dise_category_name" sql-type="varchar(64)" length="64" not-null="true"/>
+        </property>
+        <property name="sequenceNumber">
+            <column name="sequence_number" sql-type="varchar(64)" length="64" not-null="true"/>
+        </property>
+        <property name="diseCategoryType">
+            <column name="dise_category_type" sql-type="char(1)" length="1" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

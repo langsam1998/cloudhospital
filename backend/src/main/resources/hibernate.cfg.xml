@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/cloudhospital</property>
+    <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+      <mapping class="com.neu.edu.backend.pojo.ConstantItemEntity"/>
+      <mapping resource="com/neu/edu/backend/pojo/ConstantItemEntity.hbm.xml"/>
+      <mapping resource="com/neu/edu/backend/pojo/ConstantTypeEntity.hbm.xml"/>
+      <mapping class="com.neu.edu.backend.pojo.ConstantTypeEntity"/>
+      <mapping class="com.neu.edu.backend.pojo.DepartmentEntity"/>
+      <mapping resource="com/neu/edu/backend/pojo/DepartmentEntity.hbm.xml"/>
+      <mapping class="com.neu.edu.backend.pojo.DiagnoseEntity"/>
+      <mapping resource="com/neu/edu/backend/pojo/DiagnoseEntity.hbm.xml"/>
+      <mapping class="com.neu.edu.backend.pojo.DiseCategoryEntity"/>
+      <mapping resource="com/neu/edu/backend/pojo/DiseCategoryEntity.hbm.xml"/>
+      <mapping class="com.neu.edu.backend.pojo.DiseaseEntity"/>
+      <mapping resource="com/neu/edu/backend/pojo/DiseaseEntity.hbm.xml"/>
+      <mapping class="com.neu.edu.backend.pojo.DrugsEntity"/>
+      <mapping resource="com/neu/edu/backend/pojo/DrugsEntity.hbm.xml"/>
+      <mapping class="com.neu.edu.backend.pojo.ExamineDisposeApplicationEntity"/>
+      <mapping resource="com/neu/edu/backend/pojo/ExamineDisposeApplicationEntity.hbm.xml"/>
+      <mapping class="com.neu.edu.backend.pojo.ExpenseDetailEntity"/>
+      <mapping resource="com/neu/edu/backend/pojo/ExpenseDetailEntity.hbm.xml"/>
+      <mapping class="com.neu.edu.backend.pojo.FMedItemEntity"/>
+      <mapping resource="com/neu/edu/backend/pojo/FMedItemEntity.hbm.xml"/>
+      <mapping class="com.neu.edu.backend.pojo.InvoiceEntity"/>
+      <mapping resource="com/neu/edu/backend/pojo/InvoiceEntity.hbm.xml"/>
+      <mapping class="com.neu.edu.backend.pojo.PrescriptionEntity"/>
+      <mapping resource="com/neu/edu/backend/pojo/PrescriptionEntity.hbm.xml"/>
+      <mapping class="com.neu.edu.backend.pojo.RegistrationEntity"/>
+      <mapping resource="com/neu/edu/backend/pojo/RegistrationEntity.hbm.xml"/>
+      <mapping class="com.neu.edu.backend.pojo.ScheduleEntity"/>
+      <mapping resource="com/neu/edu/backend/pojo/ScheduleEntity.hbm.xml"/>
+      <mapping resource="com/neu/edu/backend/pojo/UserEntity.hbm.xml"/>
+      <mapping class="com.neu.edu.backend.pojo.UserEntity"/>
+      <mapping class="com.neu.edu.backend.pojo.HistoryEntity"/>
+      <mapping class="com.neu.edu.backend.pojo.ExpenseEntity"/>
+      <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

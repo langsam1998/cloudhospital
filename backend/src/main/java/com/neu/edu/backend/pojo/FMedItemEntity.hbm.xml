@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.neu.edu.backend.pojo.FMedItemEntity" table="f_med_item" schema="cloudhospital">
+        <id name="id">
+            <column name="id" sql-type="varchar(11)" length="11"/>
+        </id>
+        <property name="itemCode">
+            <column name="item_code" sql-type="varchar(11)" length="11" not-null="true"/>
+        </property>
+        <property name="itemName">
+            <column name="item_name" sql-type="varchar(64)" length="64" not-null="true"/>
+        </property>
+        <property name="format">
+            <column name="format" sql-type="varchar(64)" length="64" not-null="true"/>
+        </property>
+        <property name="price">
+            <column name="price" sql-type="varchar(11)" length="11" not-null="true"/>
+        </property>
+        <property name="expClassId">
+            <column name="exp_class_id" sql-type="varchar(11)" length="11" not-null="true"/>
+        </property>
+        <property name="deptId">
+            <column name="dept_id" sql-type="varchar(11)" length="11" not-null="true"/>
+        </property>
+        <property name="mnemonicCode">
+            <column name="mnemonic_code" sql-type="varchar(64)" length="64" not-null="true"/>
+        </property>
+        <property name="recordType">
+            <column name="record_type" sql-type="varchar(11)" length="11" not-null="true"/>
+        </property>
+        <property name="creationDate">
+            <column name="creation_date" sql-type="varchar(11)" length="11" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
