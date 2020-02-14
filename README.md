@@ -14,5 +14,5 @@
 
 ![首页](TIM截图20200214103200.png)
 
-[界面和部分代码参考]: https://github.com/chen622/CloudHospitalAssistant
+界面和部分代码参考：https://github.com/chen622/CloudHospitalAssistant
 
