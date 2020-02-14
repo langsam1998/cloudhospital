@@ -10,9 +10,9 @@
 - 使用 Mysql 8.0.15 版本作为数据库
 - 使用 Node.js 12.16.0 版本作为前端运行环境
 
-![TIM截图20200214103136](D:\workspace\HIS\TIM截图20200214103136.png)
+![登录界面](TIM截图20200214103136.png)
 
-![TIM截图20200214103200](D:\workspace\HIS\TIM截图20200214103200.png)
+![首页](TIM截图20200214103200.png)
 
-[界面参考]: https://github.com/chen622/CloudHospitalAssistant
+[界面和部分代码参考]: https://github.com/chen622/CloudHospitalAssistant
 
